@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+ 
+int main() {
+ 
+	clock_t t = clock();
+	int limit = 1000; // initialize # terms to 10
+ 
+	//using a for loop to demonstrate table. for loop is great for tables bc you can iterate and do a certain operation within a table 
+	cout << "number..." <<"square..." << "cube..." <<endl; //first we need to label the table
+	cout << "*****************************" <<endl;
+	for(int i = 1; i<limit; i++) {
+		cout << i << "   " << i*i << "   " << i*i*i <<endl;
+	}
+	cout << endl;
+	t = clock() - t;
+	cout << "Elapsed time:" << t << "sec" << endl;
+	return 0; // return isn't really a function, it's a keyword. it says exit the function and go back
+}
+
+// this code works when run on ideone.com
